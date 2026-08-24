@@ -6,7 +6,7 @@ import { FaCode, FaGraduationCap , FaProjectDiagram } from "react-icons/fa"
 const About = () =>{
     const {t} = useLanguage()
     return(
-        <section className="about">
+        <section className="about" id="Sobre">
             <h3>{t.introduction}</h3>
             <h1>{t.about}</h1>
             <Details />

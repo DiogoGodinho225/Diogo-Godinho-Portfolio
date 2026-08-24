@@ -12,7 +12,14 @@ export const translations = {
     aboutText: "Sou estudante de Engenharia Informática, atualmente no 3.º ano. Desde o início do curso, tenho estado em constante aprendizagem, explorando áreas como desenvolvimento web, POO, bases de dados e Inteligência Artificial. Valorizo o trabalho em equipa e a aprendizagem contínua. O meu objetivo é crescer profissionalmente, contribuindo para projetos e adquirindo novos conhecimentos. Este portefólio reúne alguns dos meus primeiros projetos académicos e pessoais.",
     languages: "Linguagens",
     educationCard: "Ctesp - PSI, Licenciatura Engenharia Informática - a frequentar",
-    projectsCard: "Projetos académicos e pessoais"
+    projectsCard: "Projetos académicos e pessoais",
+    educationTitleCard1: "Escola Secundária Figueiró dos Vinhos",
+    educationDescCard1: "Curso Ciências e Tecnologias",
+    educationTitleCard2: "Instituto Politécnico de Leiria",
+    educationDescCard2: "CTesp Programação de Sistemas de Informação",
+    educationTitleCard3: "Universidade de Leiria e Oeste",
+    educationYearsCard3: "2025 - Atualmente",
+    educationDescCard3: "Licenciatura em Engenharia Informática",
   },
   en: {
     title: "Diogo Godinho",
@@ -27,7 +34,15 @@ export const translations = {
     aboutText: "I am a Computer Engineering student, currently in my third year. Since the beginning of my degree, I have been continuously learning and exploring areas such as web development, Object-Oriented Programming, databases, and Artificial Intelligence. I value teamwork and continuous learning. My goal is to grow professionally, contributing to projects while gaining new knowledge and experience. This portfolio showcases some of my first academic and personal projects.",
     languages: "Languages",
     educationCard: "CTeSP - ISP, Computer Engineering - in progress",
-    projectsCard: "Academic and personal projects"
+    projectsCard: "Academic and personal projects",
+    educationTitleCard1: "Figueiró dos Vinhos Secondary School",
+    educationDescCard1: "Science and Technology Course",
+    educationTitleCard2: "Polytechnic University of Leiria",
+    educationDescCard2: "Higher Professional Technical Course (CTeSP) in Information Systems Programming",
+    educationTitleCard3: "University of Leiria and Oeste",
+    educationYearsCard3: "2025 - Present",
+    educationDescCard3: "Bachelor's Degree in Computer Science Engineering",
+
   }
 };
 
