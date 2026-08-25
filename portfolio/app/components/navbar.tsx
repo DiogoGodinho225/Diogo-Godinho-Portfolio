@@ -14,6 +14,7 @@ const Navbar = () => {
             <ul>
                 <NavItem label={t.about} href={'#Sobre'} />
                 <NavItem label={t.education} href={'#Formacao'} />
+                <NavItem label={t.experience} href={'#Experiencia'} />
                 <NavItem label={t.skills} href={'#Competencias'} />
                 <NavItem label={t.projects} href={'#Projetos'} />
                 <NavItem label={t.contact} href={'#Contactos'} />

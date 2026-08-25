@@ -66,7 +66,7 @@ nav a:hover {
 
 .toggleLanguageBtn {
   position: absolute;
-  right: 150px;
+  right: 90px;
   display: flex;
   align-items: center;
   width: 120px;
@@ -101,10 +101,11 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .about,
-.education {
+.education, .experience, .skills {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -118,7 +119,7 @@ nav a:hover {
 }
 
 .about h1,
-.education h1 {
+.education h1, .experience h1, .skills h1 {
   margin-top: 5px;
   font-size: 25px;
   font-weight: bold;
@@ -175,7 +176,9 @@ nav a:hover {
 }
 
 .about .card:hover,
-.education .card:hover {
+.education .card:hover,
+.experience .card:hover,
+.skills .card:hover {
   transform: translateY(-8px) !important;
 }
 
@@ -195,7 +198,7 @@ nav a:hover {
   animation-delay: 0.7s;
 }
 
-.education-table {
+.education-table, .experience-table {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -203,7 +206,7 @@ nav a:hover {
   width: 60%;
 }
 
-.education .card {
+.education .card, .experience .card {
   border: 1px solid black;
   border-radius: 5px;
   width: 100%;
@@ -213,27 +216,76 @@ nav a:hover {
     transform 0.3s ease;
 }
 
-.education .card h2 {
+.education .card h2, .experience .card h2 {
   font-weight: bold;
   font-size: 17px;
 }
 
-.education .card .years {
+.education .card .years, .experience .card .years {
   color: rgb(221, 123, 11);
   font-size: 16px;
   font-weight: bold;
 }
 
-.education .card:nth-child(1) {
+.education .card:nth-child(1), .experience .card:nth-child(1), .list:nth-child(1) {
   animation-delay: 0.4s;
 }
 
-.education .card:nth-child(2) {
+.education .card:nth-child(2), .list:nth-child(2) {
   animation-delay: 0.55s;
 }
 
-.education .card:nth-child(3) {
+.education .card:nth-child(3), .list:nth-child(3) {
   animation-delay: 0.7s;
+}
+
+.list:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+.list:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+
+.skills .skills-table{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.skills .list{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  animation: fadeUp 0.6s ease both;
+  transition:
+    transform 0.3s ease;
+}
+
+.skills .card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.skills .icon{
+  font-size: 20px;
+}
+
+.skills h2{
+  font-weight: bold;
+  font-size: 17px;
 }
 
 @keyframes fadeUp {
