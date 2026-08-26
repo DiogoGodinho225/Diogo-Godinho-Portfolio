@@ -24,6 +24,7 @@ export const translations = {
     experienceTitleCard1: "Estágio Curricular - Brindicis",
     experienceYearsCard1: "24 Fev 2025 - 24 Jul 2025",
     experienceDescCard1: "Atuação no desenvolvimento da plataforma da empresa utilizando Laravel (padrão MVC) e MySQL. Responsável pelo desenvolvimento de um Sistema de Gestão de Armazém, criando a interface gráfica em React integrada com uma REST API em Laravel.",
+    contactDesc: "Estou disponível para novas oportunidades e colaborações.",
   },
   en: {
     title: "Diogo Godinho",
@@ -50,7 +51,7 @@ export const translations = {
     experienceTitleCard1: "Curricular Internship - Brindicis",
     experienceYearsCard1: "24 Feb 2025 - 24 Jul 2025",
     experienceDescCard1: "Worked on the core company platform using Laravel (MVC pattern) and MySQL. Designed and implemented a full Warehouse Management System, developing a modern React frontend connected to a custom Laravel REST API.",
-
+    contactDesc: "I am available for new opportunities and collaborations.",
   }
 };
 

@@ -18,7 +18,7 @@ const Details = () =>{
     const {t} = useLanguage()
     return(
         <div className="details">
-            <img src={"https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQB7gKtJrakyKux71Gp9e_sWOOEtuAemsTYW-6NFzw4-zM2yJHs4RCliQEit4nodMyZeQxRMlAF7Iob2DG5grvMWyrgZstr_v09OZJ8V8qCX0jUieQruCxmq1ZHCRiH5m0DMeJ8SHmqbsLb&s=19"} />
+            <img src={"/diogo.png"} />
             <div className="details-zone">
                 <div className="text">
                     {t.aboutText}
