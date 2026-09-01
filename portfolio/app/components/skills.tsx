@@ -1,17 +1,14 @@
 'use client'
 import { useLanguage } from "../contexts/LanguageContext"
-import { SiNextdotjs, SiLaravel, SiReact, SiHtml5, SiCss, SiJavascript, SiPhp, SiMysql, SiPrisma, SiPython } from "react-icons/si"
+import { SiNextdotjs, SiLaravel, SiReact, SiHtml5, SiCss, SiJavascript, SiTypescript, SiPhp, SiMysql, SiPrisma, SiPython } from "react-icons/si"
 import { FaJava, } from "react-icons/fa"
 import { TbBrandCSharp } from 'react-icons/tb';
-
-
-
 
 const Skills = () => {
     const { t } = useLanguage()
 
     return (
-        <section className="skills" id="Experiencia">
+        <section className="skills" id="Competencias">
             <h1>{t.skills}</h1>
             <SkillsTable />
         </section>
@@ -19,6 +16,9 @@ const Skills = () => {
 }
 
 const SkillsTable = () => {
+
+    const { t } = useLanguage()
+
     return (
         <div className="skills-table">
             <h2>Framework</h2>
@@ -50,6 +50,10 @@ const SkillsTable = () => {
                     <SiJavascript className="icon" />
                     <p>JavaScript</p>
                 </div>
+                <div className="card">
+                    <SiTypescript className="icon" />
+                    <p>TypeScript</p>
+                </div>
             </div>
             <h2>Backend & APIs</h2>
             <div className="list">
@@ -66,7 +70,7 @@ const SkillsTable = () => {
                     <p>Laravel</p>
                 </div>
             </div>
-            <h2>Base de dados</h2>
+            <h2>{t.database}</h2>
             <div className="list">
                 <div className="card">
                     <SiPrisma className="icon" />
@@ -77,7 +81,7 @@ const SkillsTable = () => {
                     <p>MySql</p>
                 </div>
             </div>
-            <h2>Linguagens</h2>
+            <h2>{t.languages}</h2>
             <div className="list">
                 <div className="card">
                     <FaJava className="icon" />

@@ -1,11 +1,14 @@
 'use client'
+import { useRouter } from "next/navigation"
 import { useLanguage } from "../contexts/LanguageContext"
 import { useRef, useState } from 'react'
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
+
 interface CardProps {
     img: string,
     title: string,
     description: string,
+    url: string,
 }
 
 const Projects = () => {
@@ -22,6 +25,7 @@ const Projects = () => {
 
 const ProjectsList = () => {
     const listProjectsRef = useRef<HTMLDivElement>(null);
+    const {t} = useLanguage();
 
     const scroll = (direction: string) => {
         if (listProjectsRef.current) {
@@ -31,13 +35,12 @@ const ProjectsList = () => {
     }
 
     const projects = [
-        {title: 'teste1', img: "/diogo.png", description: "testes testes teste stets etstets5tets"},
-        {title: 'teste2', img: "/diogo.png", description: "testes testes teste stets etstets5tets"},
-        {title: 'teste3', img: "/diogo.png", description: "testes testes teste stets etstets5tets"},
-        {title: 'teste4', img: "/diogo.png", description: "testes testes teste stets etstets5tets"},
-        {title: 'teste5', img: "/diogo.png", description: "testes testes teste stets etstets5tets"},
-        {title: 'teste6', img: "/diogo.png", description: "testes testes teste stets etstets5tets"},
-        {title: 'teste7', img: "/diogo.png", description: "testes testes teste stets etstets5tets"},
+        {title: t.NexelTools.title, img: "/NexelTools/NexelToolsHome.png", description: t.NexelTools.description, url: "NexelTools"},
+        {title: t.ToDoApp.title, img: "/ToDoApp/ToDoApp.png", description: t.ToDoApp.description, url: "ToDoApp"},
+        {title: t.ZenChat.title, img: "/ZenChat/ZenChat.png", description: t.ZenChat.description, url: "ZenChat"},
+        {title: t.GestorArmazem.title, img: "/GestorArmazem/Dashboard.png", description: t.GestorArmazem.description, url: "GestorArmazem"},
+
+        
     ]
 
     return (
@@ -45,7 +48,7 @@ const ProjectsList = () => {
             <div className="projects-list" ref={listProjectsRef}>
                 {
                     projects.map((project, i) =>(
-                        <Card key={i} img={project.img} title={project.title} description={project.description}/>
+                        <Card key={i} img={project.img} title={project.title} description={project.description} url={project.url}/>
                     ))
                 }
 
@@ -58,13 +61,14 @@ const ProjectsList = () => {
     )
 }
 
-const Card = ({ img, title, description }: CardProps) => {
+const Card = ({ img, title, description, url }: CardProps) => {
+    const router = useRouter()
     return (
         <div className="card">
             <img src={img} />
             <h2>{title}</h2>
             <p>{description}</p>
-            <button>ver mais</button>
+            <button onClick={() => router.push(`/project/${url}`)}>ver mais</button>
         </div>
     )
 }
