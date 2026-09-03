@@ -29,6 +29,10 @@ export const translations = {
     contactDesc: "Estou disponível para novas oportunidades e colaborações.",
     technologies: "Tecnologias usadas",
     database: "Base de dados",
+    rtc: "Comunicação em tempo real",
+    security: "Segurança e Criptografia",
+    cryptography: "Criptografia Assimétrica e Simétrica",
+    signature: "Assinaturas Digitais",
     NexelTools: {
       title: "Marketplace de Ferramentas",
       description: "Marketplace multiplataforma (Web e Android) para compra e venda de ferramentas",
@@ -46,11 +50,37 @@ export const translations = {
     ToDoApp: {
       title: "To-Do-App",
       description: "Aplicação web para gestão e acompanhamento de projetos, com organização de tarefas por etapas, prazos e controlo de progresso.",
-      subtitle: "Esta aplicação full-stack vai além de uma simples lista de afazeres, funcionando como uma plataforma colaborativa de gestão de projetos e tarefas. Desenvolvida integralmente em Next.js, a aplicação permite que os utilizadores criem projetos, adicionem colaboradores e gira todo o fluxo de trabalho através de tarefas organizadas dentro de cada projeto. A arquitetura foi construída tirando partido das API Routes do Next.js, garantindo uma integração direta entre o frontend e a lógica de backend para autenticação, controlo de acessos e persistência de dados."
+      subtitle: "Esta aplicação full-stack vai além de uma simples lista de afazeres, funcionando como uma plataforma colaborativa de gestão de projetos e tarefas. Desenvolvida integralmente em Next.js, a aplicação permite que os utilizadores criem projetos, adicionem colaboradores e gira todo o fluxo de trabalho através de tarefas organizadas dentro de cada projeto. A arquitetura foi construída tirando partido das API Routes do Next.js, garantindo uma integração direta entre o frontend e a lógica de backend para autenticação, controlo de acessos e persistência de dados.",
+      subtitles: {
+        l1: "Login",
+        l2: "Perfil",
+        l3: "Novo Projeto",
+        l4: "Lista de Tarefas",
+        l5: "Membros",
+        l6: "Quadro",
+      }
+
     },
     ZenChat: {
       title: "ZenChat",
-      description: "Chat em tempo real cliente-servidor com comunicação via WebSockets e encriptação de mensagens."
+      description: "Chat em tempo real cliente-servidor com comunicação via WebSockets e encriptação de mensagens.",
+      subtitle: "O ZenChat é uma aplicação cliente-servidor desenvolvida em C#, concebida para garantir comunicações em tempo real de forma totalmente privada, íntegra e segura. O principal objetivo do projeto foi construir uma plataforma de mensagens fiável, protegida contra adulterações de dados, aplicando técnicas avançadas de encriptação e autenticação rigorosas.",
+      title2: "Principais Funcionalidades e Características de Segurança",
+      list: {
+        l1: "Comunicações End-to-End Criptografadas",
+        l2: "Autenticação e Controlo de Acesso",
+        l3: "Validação por Assinatura Digital",
+        l4: "Troca de Mensagens em Tempo Real",
+        l1txt: "Todas as mensagens trocadas entre os módulos Cliente e Servidor são encriptadas utilizando algoritmos criptográficos, garantindo a confidencialidade total das comunicações.",
+        l2txt: "Controlo de acesso rigoroso no servidor: apenas os utilizadores previamente registados e validados na base de dados (MySQL) podem autenticar-se e aceder ao sistema.",
+        l3txt: "Implementação de assinaturas digitais para verificação e validação da identidade do cliente e das mensagens enviadas, garantindo a integridade e a não-repudiação das comunicações. Troca segura de chaves públicas entre o cliente e o servidor durante o estabelecimento da ligação.",
+        l4txt: "Arquitetura baseada em WebSockets, permitindo o envio e receção instantânea de mensagens com baixa latência e alta eficiência.",
+      },
+      subtitles: {
+        l1: "Login",
+        l2: "Chat",
+        l3: "Servidor",
+      }
     },
     GestorArmazem: {
       title: "Gestor de Armazém",
@@ -85,6 +115,10 @@ export const translations = {
     contactDesc: "I am available for new opportunities and collaborations.",
     technologies: "Technologies used",
     database: "Database",
+    rtc: "Real-time communication",
+    security: "Security and Cryptography",
+    cryptography: "Asymetric ans Symetric Cryptography",
+    signature: "Digital Signatures",
     NexelTools: {
       title: "Tools Marketplace",
       description: "Multiplatform marketplace (Web and Android) for buying and selling tools.",
@@ -102,11 +136,36 @@ export const translations = {
     ToDoApp: {
       title: "To-Do-App",
       description: "Project management web app built to organize tasks by stages, track deadlines, and monitor overall project progress.",
-      subtitle: "This full-stack application goes beyond a simple to-do list, functioning as a collaborative platform for project and task management. Built entirely with Next.js, the application allows users to create projects, invite collaborators, and manage their entire workflow through organized tasks within each project. The architecture leverages Next.js API Routes to ensure a seamless integration between the front-end and back-end logic for authentication, access control, and data persistence."
+      subtitle: "This full-stack application goes beyond a simple to-do list, functioning as a collaborative platform for project and task management. Built entirely with Next.js, the application allows users to create projects, invite collaborators, and manage their entire workflow through organized tasks within each project. The architecture leverages Next.js API Routes to ensure a seamless integration between the front-end and back-end logic for authentication, access control, and data persistence.",
+      subtitles: {
+        l1: "Login",
+        l2: "Profile",
+        l3: "New Project",
+        l4: "Task list",
+        l5: "Members",
+        l6: "Board",
+      }
     },
     ZenChat: {
       title: "ZenChat",
-      description: "Real-time client-server chat app with WebSockets and message encryption."
+      description: "Real-time client-server chat app with WebSockets and message encryption.",
+      subtitle: "ZenChat is a client-server application developed in C#, designed to ensure real-time communications in a completely private, reliable, and secure manner. The main objective of the project was to build a trustworthy messaging platform, protected against data tampering, by applying advanced encryption techniques and rigorous authentication.",
+      title2: "Main Features and Security Resources",
+      list: {
+        l1: "End-to-End Encrypted Communications",
+        l2: "Authentication and Acess Control",
+        l3: "Digital Signature Validation",
+        l4: "Real-time Messaging",
+        l1txt: "All messages exchanged between the Client and Server modules are encrypted using cryptographic algorithms, ensuring complete confidentiality.",
+        l2txt: "Strict access control on the server: only users who have been previously registered and validated in the database (MySQL) can authenticate and access the system.",
+        l3txt: "Implementation of digital signatures for verification and validation of client identity and sent messages, ensuring the integrity and non-repudiation of communications. Secure exchange of public keys between the client and the server during connection establishment.",
+        l4txt: "Architecture based on WebSockets, enabling instant sending and receiving of messages with low latency and high efficiency.",
+      },
+      subtitles: {
+        l1: "Login",
+        l2: "Chat",
+        l3: "Server",
+      }
     },
     GestorArmazem: {
       title: "Warehouse Manager",

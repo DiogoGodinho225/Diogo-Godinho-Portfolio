@@ -512,3 +512,9 @@ nav a:hover {
 .img-group h4{
   font-size: 15px;
 }
+
+.project-details ol{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

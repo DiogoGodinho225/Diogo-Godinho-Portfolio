@@ -2,7 +2,6 @@
 
 import { useLanguage } from "@/app/contexts/LanguageContext"
 import { SiNextdotjs, SiHtml5, SiCss, SiTypescript, SiMysql, SiReact, SiPrisma } from "react-icons/si";
-import { FaJava, } from "react-icons/fa"
 
 const ToDoApp = () => {
 
@@ -77,28 +76,28 @@ const ImagesList = () => {
     return (
         <div className="img-list">
             <div className="img-group">
-                <img src="/NexelTools/NexelToolsHome.png" />
-                <h4>{t.NexelTools.subtitles.l1}</h4>
+                <img src="/ToDoApp/login.png" />
+                <h4>{t.ToDoApp.subtitles.l1}</h4>
             </div>
             <div className="img-group">
-                <img src="/NexelTools/Catalogo.png" />
-                <h4>{t.NexelTools.subtitles.l2}</h4>
+                <img src="/ToDoApp/Perfil.png" />
+                <h4>{t.ToDoApp.subtitles.l2}</h4>
             </div>
             <div className="img-group">
-                <img src="/NexelTools/Produto.png" />
-                <h4>{t.NexelTools.subtitles.l3}</h4>
+                <img src="/ToDoApp/criar-projeto.png" />
+                <h4>{t.ToDoApp.subtitles.l3}</h4>
             </div>
             <div className="img-group">
-                <img src="/NexelTools/Carrinho.png" />
-                <h4>{t.NexelTools.subtitles.l4}</h4>
+                <img src="/ToDoApp/ToDoApp.png" />
+                <h4>{t.ToDoApp.subtitles.l4}</h4>
             </div>
             <div className="img-group">
-                <img src="/NexelTools/backoffice-home.png" />
-                <h4>{t.NexelTools.subtitles.l6}</h4>
+                <img src="/ToDoApp/membros.png" />
+                <h4>{t.ToDoApp.subtitles.l5}</h4>
             </div>
             <div className="img-group">
-                <img src="/NexelTools/gestao-de-vendas.png" />
-                <h4>{t.NexelTools.subtitles.l7}</h4>
+                <img src="/ToDoApp/quadro.png" />
+                <h4>{t.ToDoApp.subtitles.l6}</h4>
             </div>
         </div>
     )
