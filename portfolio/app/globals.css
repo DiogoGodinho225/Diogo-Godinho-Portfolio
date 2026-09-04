@@ -33,6 +33,11 @@ nav {
   z-index: 1000;
 }
 
+.menu-checkbox,
+.menu-btn {
+  display: none;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -285,7 +290,8 @@ nav a:hover {
     transform 0.3s ease;
 }
 
-.skills .card, .tech-info {
+.skills .card,
+.tech-info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,7 +303,8 @@ nav a:hover {
   font-size: 15px;
 }
 
-.skills .icon, .tech-info .icon {
+.skills .icon,
+.tech-info .icon {
   font-size: 20px;
 }
 
@@ -447,7 +454,7 @@ nav a:hover {
   min-height: 100vh;
   padding-top: 100px !important;
   padding: 30px 40px;
-  padding-bottom: 70px!important;
+  padding-bottom: 70px !important;
 }
 
 .project-details h1 {
@@ -461,49 +468,47 @@ nav a:hover {
   justify-content: space-between;
 }
 
-
-
-.project-details .subtitle{
+.project-details .subtitle {
   margin-top: 20px;
   font-size: 15px;
 }
 
-.project-details h2{
+.project-details h2 {
   font-weight: 600;
   font-size: 20px;
   margin-top: 20px;
 }
 
-.project-details h3{
+.project-details h3 {
   font-weight: 500;
   font-size: 16px;
   margin-top: 10px;
 }
 
-.project-details .tech{
+.project-details .tech {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.tech-group{
+.tech-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.project-details .tech-list{
+.project-details .tech-list {
   display: flex;
   gap: 10px;
 }
 
-.project-details .tech-info{
+.project-details .tech-info {
   display: flex;
 }
 
 .img-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px; 
+  gap: 20px;
   margin-top: 30px;
   width: 100%;
 }
@@ -516,20 +521,21 @@ nav a:hover {
   width: 100%;
   gap: 10px;
 }
-.img-group h4{
+
+.img-group h4 {
   font-size: 15px;
 }
 
-.project-details ol{
+.project-details ol {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-footer{
+footer {
   position: fixed;
   bottom: 0;
-  width:100%;
+  width: 100%;
   color: black;
   height: 50px;
   display: flex;
@@ -537,4 +543,103 @@ footer{
   align-items: center;
   z-index: 1000;
   background-color: rgb(240, 240, 240);
+}
+
+@media (max-width: 768px) {
+
+  nav{
+    height: 60px;
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .toggleLanguageBtn{
+    left: 10px;
+  }
+
+  .menu-btn{
+    position: absolute;
+    right: 10px;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 1.5rem 0;
+    gap: 1rem;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .menu-checkbox:checked~.nav-menu {
+    display: flex;
+  }
+
+  .home-container {
+    width: 100%;
+  }
+
+  .about,
+  .education,
+  .experience,
+  .skills,
+  .projects,
+  .contact {
+    padding: 5px;
+  }
+
+  .about img {
+    width: 250px;
+  }
+
+  .about .details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-table,
+  .experience-table {
+    width: 100%;
+  }
+
+  .skills .list {
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-details {
+    padding: 10px 20px;
+  }
+
+  .project-details h1 {
+    width: 100%;
+  }
+
+  .tech {
+    flex-direction: column;
+  }
+
+  .tech-list {
+    flex-wrap: wrap;
+  }
 }
