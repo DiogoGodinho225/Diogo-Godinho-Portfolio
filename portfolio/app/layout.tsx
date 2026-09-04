@@ -4,6 +4,7 @@ import { } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from '@/app/contexts/LanguageContext'
 import Navbar from '@/app/components/navbar'
+import Footer from '@/app/components/footer'
 
 export const metadata: Metadata = {
   title: "Diogo Godinho",
@@ -25,7 +26,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             {children}
 
           </main>
+          <Footer />
         </body>
+
       </LanguageProvider>
     </html>
   );

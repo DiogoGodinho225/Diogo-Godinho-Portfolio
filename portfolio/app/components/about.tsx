@@ -27,7 +27,7 @@ const Details = () =>{
                     <div className="card">
                         <FaCode className="icon"/>
                         <h2>{t.languages}</h2>
-                        <p>Java, C#, PHP, MySQL, Next.js, React.js, HTML, CSS, JavaScript</p>
+                        <p>Java, C#, PHP, MySQL, Next.js, React.js, HTML, CSS, JavaScript, TypeScript</p>
                     </div>
                     <div className="card">
                         <FaGraduationCap  className="icon"/>

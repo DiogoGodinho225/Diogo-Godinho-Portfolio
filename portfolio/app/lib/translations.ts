@@ -38,7 +38,7 @@ export const translations = {
       description: "Marketplace multiplataforma (Web e Android) para compra e venda de ferramentas",
       subtitle: "Este projeto foi desenvolvido no âmbito da conclusão do CTeSP em Programação de Sistemas de Informação. O seu principal objetivo foi o desenvolvimento de um sistema completo para um marketplace online de ferramentas. O sistema é composto por uma plataforma web que inclui um Frontoffice — permitindo aos utilizadores comprar e colocar produtos à venda — e um Backoffice dedicado à gestão global da plataforma por parte dos administradores. Além da vertente web, o sistema conta com uma aplicação Android nativa, permitindo aos utilizadores consultar o catálogo de produtos e realizar compras. Para integrar e sincronizar todas as plataformas (Web e Android), foi desenvolvida uma REST API centralizada que comunica com uma base de dados relacional MySQL.",
       subtitles: {
-        l1: "Frontoffice -Página inicial",
+        l1: "Frontoffice - Página inicial",
         l2: "Frontoffice - Catálogo",
         l3: "Frontoffice - Detalhes Produto",
         l4: "Frontoffice - Carrinho de Compras",
@@ -84,7 +84,16 @@ export const translations = {
     },
     GestorArmazem: {
       title: "Gestor de Armazém",
-      description: "Plataforma de gestão de armazém e controlo de stock em tempo real."
+      description: "Plataforma de gestão de armazém e controlo de stock em tempo real.",
+      subtitle: "Desenvolvido no âmbito do meu estágio curricular, este sistema de gestão de armazém é uma solução completa dividida em duas grandes áreas: um Frontoffice direcionado ao cliente/utilizador final para consulta e reserva de produtos, e um Backoffice focado nas operações diárias da equipa de logística e trabalhadores do armazém.",
+      subtitles: {
+        l1: "Frontoffice - Página inicial",
+        l2: "Frontoffice - Lista de Produtos",
+        l3: "Frontoffice - Detalhes do Produto",
+        l4: "Backoffice - Lista de Reservas",
+        l5: "Backoffice - Lista de Produtos",
+        l6: "Backoffice - Criar nova categoria",
+      }
     }
   },
   en: {
@@ -169,7 +178,16 @@ export const translations = {
     },
     GestorArmazem: {
       title: "Warehouse Manager",
-      description: "Real-time warehouse and inventory management platform."
+      description: "Real-time warehouse and inventory management platform.",
+      subtitle: "Developed as part of my curricular internship, this warehouse management system is a complete solution divided into two main areas: a front office focused on the end-user for product consultation and reservation, and a back office focused on the daily operations of the logistics team and warehouse workers.",
+      subtitles: {
+        l1: "Frontoffice - Homepage",
+        l2: "Frontoffice - Products list",
+        l3: "Frontoffice - Product details",
+        l4: "Backoffice - Reservations list",
+        l5: "Backoffice - Products list",
+        l6: "Backoffice - Create new category",
+      }
     }
   }
 };

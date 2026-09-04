@@ -1,7 +1,7 @@
 'use client'
 
 import { useLanguage } from "@/app/contexts/LanguageContext"
-import { SiNextdotjs, SiHtml5, SiCss, SiTypescript, SiMysql, SiReact, SiPrisma } from "react-icons/si";
+import { SiMysql, SiGithub } from "react-icons/si";
 import { TbBrandCSharp } from 'react-icons/tb';
 
 const ZenChat = () => {
@@ -10,7 +10,7 @@ const ZenChat = () => {
 
     return (
         <div className="project-details">
-            <h1>{t.ZenChat.title}</h1>
+            <h1>{t.ZenChat.title} <a href="https://github.com/DiogoGodinho225/ZenChat"><SiGithub className="icon" /></a></h1>
             <h2>{t.technologies}</h2>
             <div className="tech">
                 <div className="tech-group">

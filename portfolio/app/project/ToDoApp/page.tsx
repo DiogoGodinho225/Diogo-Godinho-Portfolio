@@ -1,7 +1,7 @@
 'use client'
 
 import { useLanguage } from "@/app/contexts/LanguageContext"
-import { SiNextdotjs, SiHtml5, SiCss, SiTypescript, SiMysql, SiReact, SiPrisma } from "react-icons/si";
+import { SiNextdotjs, SiHtml5, SiCss, SiTypescript, SiMysql, SiReact, SiPrisma, SiGithub } from "react-icons/si";
 
 const ToDoApp = () => {
 
@@ -9,7 +9,7 @@ const ToDoApp = () => {
 
     return (
         <div className="project-details">
-            <h1>{t.ToDoApp.title}</h1>
+            <h1>{t.ToDoApp.title} <a href="https://github.com/DiogoGodinho225/to-do-app"><SiGithub className="icon" /></a></h1>
             <h2>{t.technologies}</h2>
             <div className="tech">
                 <div className="tech-group">

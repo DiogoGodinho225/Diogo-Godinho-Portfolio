@@ -1,24 +1,24 @@
 'use client'
 
 import { useLanguage } from "@/app/contexts/LanguageContext"
-import { SiYii, SiHtml5, SiCss, SiJavascript, SiPhp, SiMysql, SiGithub } from "react-icons/si";
+import { SiLaravel, SiHtml5, SiCss, SiJavascript, SiPhp, SiMysql, SiReact, SiGithub } from "react-icons/si";
 import { FaJava, } from "react-icons/fa"
 
-const NexelTools = () => {
+const GestorArmazem = () => {
 
     const { t } = useLanguage();
 
     return (
         <div className="project-details">
-            <h1>{t.NexelTools.title} <a href="https://github.com/DiogoGodinho225/NexelTools"><SiGithub className="icon" /></a></h1>
+            <h1>{t.GestorArmazem.title} <a href="https://github.com/DiogoGodinho225/BrindicisStockApp"><SiGithub className="icon" /></a></h1>
             <h2>{t.technologies}</h2>
             <div className="tech">
                 <div className="tech-group">
                     <h3>WebSite</h3>
                     <div className="tech-list">
                         <div className="tech-info">
-                            <SiYii className="icon" />
-                            <p>Yii2 Framework</p>
+                            <SiReact className="icon" />
+                            <p>React</p>
                         </div>
                         <div className="tech-info">
                             <SiHtml5 className="icon" />
@@ -32,31 +32,18 @@ const NexelTools = () => {
                             <SiJavascript className="icon" />
                             <p>JavaScript</p>
                         </div>
-                        <div className="tech-info">
-                            <SiPhp className="icon" />
-                            <p>PHP</p>
-                        </div>
                     </div>
                 </div>
                 <div className="tech-group">
                     <h3>Rest API</h3>
                     <div className="tech-list">
                         <div className="tech-info">
-                            <SiYii className="icon" />
-                            <p>Yii2 Framework</p>
+                            <SiLaravel className="icon" />
+                            <p>Laravel</p>
                         </div>
                         <div className="tech-info">
                             <SiPhp className="icon" />
                             <p>PHP</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="tech-group">
-                    <h3>Android App</h3>
-                    <div className="tech-list">
-                        <div className="tech-info">
-                            <FaJava className="icon" />
-                            <p>Java</p>
                         </div>
                     </div>
                 </div>
@@ -70,7 +57,7 @@ const NexelTools = () => {
                     </div>
                 </div>
             </div>
-            <p className="subtitle">{t.NexelTools.subtitle}</p>
+            <p className="subtitle">{t.GestorArmazem.subtitle}</p>
             <ImagesList />
         </div>
     )
@@ -82,31 +69,31 @@ const ImagesList = () =>{
     return(
         <div className="img-list">
             <div className="img-group">
-                <img src="/NexelTools/NexelToolsHome.png" />
-                <h4>{t.NexelTools.subtitles.l1}</h4>
+                <img src="/GestorArmazem/Dashboard.png" />
+                <h4>{t.GestorArmazem.subtitles.l1}</h4>
             </div>
             <div className="img-group">
-                <img src="/NexelTools/Catalogo.png" />
-                <h4>{t.NexelTools.subtitles.l2}</h4>
+                <img src="/GestorArmazem/Lista-produtos.png" />
+                <h4>{t.GestorArmazem.subtitles.l2}</h4>
             </div>
             <div className="img-group">
-                <img src="/NexelTools/Produto.png" />
-                <h4>{t.NexelTools.subtitles.l3}</h4>
+                <img src="/GestorArmazem/Produto.png" />
+                <h4>{t.GestorArmazem.subtitles.l3}</h4>
             </div>
             <div className="img-group">
-                <img src="/NexelTools/Carrinho.png" />
-                <h4>{t.NexelTools.subtitles.l4}</h4>
+                <img src="/GestorArmazem/backoffice-lista-reservas.png" />
+                <h4>{t.GestorArmazem.subtitles.l4}</h4>
             </div>
             <div className="img-group">
-                <img src="/NexelTools/backoffice-home.png" />
-                <h4>{t.NexelTools.subtitles.l6}</h4>
+                <img src="/GestorArmazem/backoffice-produtos.png" />
+                <h4>{t.GestorArmazem.subtitles.l5}</h4>
             </div>
             <div className="img-group">
-                <img src="/NexelTools/gestao-de-vendas.png" />
-                <h4>{t.NexelTools.subtitles.l7}</h4>
+                <img src="/GestorArmazem/criar-nova-categoria.png" />
+                <h4>{t.GestorArmazem.subtitles.l6}</h4>
             </div>
         </div>
     )
 }
 
-export default NexelTools
+export default GestorArmazem

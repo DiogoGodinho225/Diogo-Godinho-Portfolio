@@ -101,7 +101,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 .about,
@@ -443,9 +443,11 @@ nav a:hover {
 }
 
 .project-details {
+  background-color: rgb(240, 240, 240);
   min-height: 100vh;
   padding-top: 100px !important;
   padding: 30px 40px;
+  padding-bottom: 70px!important;
 }
 
 .project-details h1 {
@@ -454,7 +456,12 @@ nav a:hover {
   font-size: 20px;
   border-bottom: 2px solid #2b7bd1;
   padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+
 
 .project-details .subtitle{
   margin-top: 20px;
@@ -517,4 +524,17 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  color: black;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgb(240, 240, 240);
 }
