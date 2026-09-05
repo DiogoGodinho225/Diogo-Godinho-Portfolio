@@ -642,4 +642,9 @@ footer {
   .tech-list {
     flex-wrap: wrap;
   }
+
+  .img-list{
+    display: flex;
+    flex-direction: column;
+  }
 }

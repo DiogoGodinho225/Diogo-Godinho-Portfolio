@@ -94,7 +94,7 @@ const ImagesList = () =>{
                 <h4>{t.NexelTools.subtitles.l3}</h4>
             </div>
             <div className="img-group">
-                <img src="/NexelTools/Carrinho.png" />
+                <img src="/NexelTools/carrinho.png" />
                 <h4>{t.NexelTools.subtitles.l4}</h4>
             </div>
             <div className="img-group">
