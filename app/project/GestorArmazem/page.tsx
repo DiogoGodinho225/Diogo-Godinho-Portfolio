@@ -77,7 +77,7 @@ const ImagesList = () =>{
                 <h4>{t.GestorArmazem.subtitles.l2}</h4>
             </div>
             <div className="img-group">
-                <img src="/GestorArmazem/Produto.png" />
+                <img src="/GestorArmazem/produto.png" />
                 <h4>{t.GestorArmazem.subtitles.l3}</h4>
             </div>
             <div className="img-group">

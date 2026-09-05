@@ -85,7 +85,7 @@ const ImagesList = () => {
     return (
         <div className="img-list">
             <div className="img-group">
-                <img src="/ZenChat/login.png" />
+                <img src="/ZenChat/Login.png" />
                 <h4>{t.ZenChat.subtitles.l1}</h4>
             </div>
             <div className="img-group">
