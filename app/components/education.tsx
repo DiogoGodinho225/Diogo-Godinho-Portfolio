@@ -23,7 +23,7 @@ const EducationTable = () => {
     return (
         <div className="education-table">
             <Card title={t.educationTitleCard1} years={'2011 - 2023'} description={t.educationDescCard1} />
-            <Card title={t.educationTitleCard2} years={'2011 - 2023'} description={t.educationDescCard2} />
+            <Card title={t.educationTitleCard2} years={'2023 - 2025'} description={t.educationDescCard2} />
             <Card title={t.educationTitleCard3} years={t.educationYearsCard3} description={t.educationDescCard3} />
         </div>
     )
