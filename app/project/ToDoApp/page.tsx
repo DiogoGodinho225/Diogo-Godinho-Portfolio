@@ -38,7 +38,7 @@ const ToDoApp = () => {
                     </div>
                 </div>
                 <div className="tech-group">
-                    <h3>Rest API</h3>
+                    <h3>API</h3>
                     <div className="tech-list">
                         <div className="tech-info">
                             <SiNextdotjs className="icon" />
